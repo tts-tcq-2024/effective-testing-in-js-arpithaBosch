@@ -7,17 +7,14 @@ describe('T-Shirt Size Tests', () => {
     it('should return S for cms < 38', () => {
         expect(size(37)).to.equal('S', 'Expected size to be S for cms < 38');
     });
-    
     // Expected pass
     it('should return M for 38 < cms < 42', () => {
         expect(size(40)).to.equal('M', 'Expected size to be M for 38 < cms < 42');
     });
-    
     // Expected pass
     it('should return L for cms > 42', () => {
         expect(size(43)).to.equal('L', 'Expected size to be L for cms > 42');
     });
-    
     // This test expects a specific result for cms = 38, which might not be handled in `size` function.
     // We expect this test to fail if 38 is not handled as 'S'.
     it('should handle cms = 38 accurately', () => {
