@@ -1,9 +1,8 @@
 #!/bin/bash
 
-if ! mocha tests/*.js; then
-    echo "Failed as expected"
-    exit 0
-else
+if $1; then
     echo "FALSE POSITIVE! Expected failure but succeeded"
     exit 1
+else
+    echo "Failed as expected"
 fi
