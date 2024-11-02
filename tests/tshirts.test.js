@@ -52,5 +52,4 @@ describe('T-Shirt Size Tests', () => {
     it('should return undefined for negative cms', () => {
         expect(size(-5)).to.be.undefined;
     });
-    
 });
