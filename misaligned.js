@@ -14,3 +14,4 @@ function print_color_map() {
 result = print_color_map();
 expect(result).equals(25);
 console.log('All is well (maybe!)');
+module.exports = { print_color_map };
